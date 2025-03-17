@@ -8,6 +8,6 @@ RUN ./mvnw clean install
 
 EXPOSE 8080
 
-COPY target/testee-0.0.1-SNAPSHOT.jar app.jar
+COPY /app/target/testee-0.0.1-SNAPSHOT.jar app.jar
 
 ENTRYPOINT ["java", "-jar", "app.jar"]
